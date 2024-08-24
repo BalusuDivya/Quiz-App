@@ -1,0 +1,100 @@
+body {
+    background-image: url("violet.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+h1{
+    display: inline-block;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 50px purple;
+}
+
+.quiz-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 800px;
+}
+
+.question {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between buttons */
+}
+
+.option {
+    background-color: rgb(210, 37, 210); /* Button color */
+    color: white; /* Text color */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px; /* Padding for the buttons */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+.option:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.disabled {
+    background-color: #6c757d; /* Grey for disabled options */
+    cursor: not-allowed; /* Change cursor for disabled options */
+}
+
+.correct {
+    background-color: #28a745; /* Green for correct answers */
+}
+
+.incorrect {
+    background-color: #dc3545; /* Red for incorrect answers */
+}
+
+.next-btn {
+    margin-top: 20px;
+    background-color: #007bff; /* Button color */
+    color: white; /* Text color */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    display: none; /* Initially hidden */
+}
+
+.next-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.quiz-result {
+    display: none; /* Initially hidden */
+    text-align: center;
+}
+
+.question-container {
+    margin: 10px 0;
+}
+
+.timer {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
